@@ -81,14 +81,14 @@
     font-size: 1rem;
     line-height: 1.5;
 }
-
-/* AddProduct styles */
 .add-product-form {
     max-width: 400px;
     background: #f9f9f9;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
 .add-product-form input,
@@ -99,7 +99,7 @@
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s ease;
     font-family: inherit;
 }
 
@@ -120,6 +120,7 @@
     font-weight: 600;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .add-product-form button:hover {
