@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AddProduct from './components/AddProduct';
+import ProductList from './components/ProductList';
 
 function App() {
+  const [tab, setTab] = useState('add');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <button onClick={() => setTab('add')}>Dodaj opis</button>
+        <button onClick={() => setTab('list')}>Lista</button>
+        {tab === 'add' && <AddProduct />}
+        {tab === 'list' && <ProductList />}
+      </div>
   );
 }
 

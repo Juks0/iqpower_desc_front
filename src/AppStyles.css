@@ -1,0 +1,127 @@
+/* AppStyles.css */
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+}
+
+/* ProductList styles */
+.product-list {
+    width: 250px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    color: #222;
+}
+
+.product-list li:hover {
+    background-color: #e0eaff;
+}
+
+.product-list li.selected {
+    background-color: #4863f4;
+    color: white;
+    font-weight: 600;
+}
+
+.product-list button.delete-btn {
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.product-list button.delete-btn:hover {
+    background-color: #bf2a2b;
+}
+
+/* Detail box */
+.product-detail {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    min-height: 200px;
+}
+
+.product-detail p {
+    white-space: pre-wrap; /* zachowuje formatowanie w opisie */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* AddProduct styles */
+.add-product-form {
+    max-width: 400px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.add-product-form input,
+.add-product-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+    outline: none;
+    border-color: #4863f4;
+    box-shadow: 0 0 5px rgba(72, 99, 244, 0.6);
+}
+
+.add-product-form button {
+    background-color: #4863f4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-product-form button:hover {
+    background-color: #314bc4;
+}
